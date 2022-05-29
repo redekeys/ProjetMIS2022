@@ -8,7 +8,7 @@ package view;
 import controller.DoctorJpaController;
 import controller.FileJpaController;
 import controller.PatientJpaController;
-import controller.PersonJpaController;
+import controller.PersonJpaController1;
 import controller.exceptions.NonexistentEntityException;
 import java.awt.Image;
 import java.awt.event.MouseEvent;
@@ -211,7 +211,7 @@ public class MainWindowDoctor extends javax.swing.JFrame {
         
         file.setType((String) TypeComboBox.getSelectedItem());
 
-        Person person = new Person(4,"derou", "cha" , fmt.parse("1999-09-15"), "test", "1234");
+        Person person = new Person(4,"derou", "cha" , fmt.parse("1999-09-15"));
         Doctor doctor = new Doctor(4,123456);
         doctor.setPerson(person);
         file.setDoctor(doctor);

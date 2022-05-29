@@ -8,7 +8,7 @@ import javax.persistence.Persistence;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import controller.DoctorJpaController;
-import controller.PersonJpaController;
+import controller.PersonJpaController1;
 import controller.exceptions.IllegalOrphanException;
 import controller.exceptions.NonexistentEntityException;
 import model.Doctor;
@@ -19,7 +19,7 @@ import model.Doctor;
 public class AddDoctorWindow extends javax.swing.JFrame {
     private final EntityManagerFactory emfac = Persistence.createEntityManagerFactory("misProjet");
     private final DoctorJpaController doctorCtrl = new DoctorJpaController(emfac);
-    private final PersonJpaController personCtrl = new PersonJpaController(emfac);
+    private final PersonJpaController1 personCtrl = new PersonJpaController1(emfac);
     
     private static final Logger LOGGER = LogManager.getLogger(AddDoctorWindow.class.getName());
     

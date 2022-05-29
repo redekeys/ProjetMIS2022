@@ -7,6 +7,7 @@ package model;
 
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Date;
 import javax.persistence.Basic;
@@ -63,15 +64,8 @@ public class Person implements Serializable {
     private Collection<Doctor> doctorCollection;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "person")
     private Collection<Patient> patientCollection;
-    @Basic(optional = false)
-    @Column(name = "username")
-    private String username;
-    @Basic(optional = false)
-    @Column(name = "password")
-    private String password;
-    @Column(name = "last_login")
-    @Temporal(TemporalType.DATE)
-    private Date lastLogin;
+
+
     
     
     public Person() {
@@ -81,13 +75,12 @@ public class Person implements Serializable {
         this.id = id;
     }
 
-    public Person(Integer id, String name, String firstname, Date dateOfBirth, String username, String password) {
+    public Person(Integer id, String name, String firstname, Date dateOfBirth) {
         this.id = id;
         this.name = name;
         this.firstname = firstname;
         this.dateOfBirth = dateOfBirth;
-        this.username = username;
-        this.password = password;
+ 
         
     }
 
@@ -167,29 +160,12 @@ public class Person implements Serializable {
         return name.toUpperCase() + " " + firstname + " (" + fmt.format(dateOfBirth) + ")";
     }
 
-      public String getUsername() {
-        return username;
-    }
+    
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
 
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
 
 
  
-   public Date getLastLogin() {
-        return lastLogin;
-    }
 
-    public void setLastLogin(Date lastLogin) {
-        this.lastLogin = lastLogin;
-    }
+
 }

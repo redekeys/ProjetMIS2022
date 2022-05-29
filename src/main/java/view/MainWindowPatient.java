@@ -7,7 +7,7 @@ package view;
 
 import controller.DoctorJpaController;
 import controller.DoctorgJpaController;
-import controller.PersonJpaController;
+import controller.PersonJpaController1;
 import controller.PersongJpaController;
 import controller.exceptions.NonexistentEntityException;
 import java.awt.event.MouseEvent;
@@ -37,7 +37,7 @@ public class MainWindowPatient extends javax.swing.JFrame {
     private final EntityManagerFactory emfacperso = Persistence.createEntityManagerFactory("misProjet");
     private final DoctorgJpaController doctorgCtrl = new DoctorgJpaController(emfac);
     private final DoctorJpaController doctorCtrl = new DoctorJpaController(emfacperso);
-    private final PersonJpaController personCtrl = new PersonJpaController(emfacperso);
+    private final PersonJpaController1 personCtrl = new PersonJpaController1(emfacperso);
     
     Doctorg doctorg = null;
     Doctor doctor = null;

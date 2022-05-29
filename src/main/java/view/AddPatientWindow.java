@@ -6,6 +6,7 @@ package view;
 
 import controller.PatientJpaController;
 import controller.PersonJpaController;
+import controller.PersonJpaController1;
 import controller.exceptions.IllegalOrphanException;
 import controller.exceptions.NonexistentEntityException;
 import org.apache.logging.log4j.LogManager;
@@ -163,7 +164,7 @@ public class AddPatientWindow extends javax.swing.JFrame {
 
         // Create person if necessary:
         if( patient.getPerson().getId() == null ){
-            personCtrl.create(patient.getIdperson());
+            personCtrl.create(patient.getPerson());
             LOGGER.debug("Created new person (id = %d)".formatted(patient.getIdperson().getId()));
         }
         // Create patient if necessary
