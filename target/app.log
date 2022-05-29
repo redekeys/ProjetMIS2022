@@ -95,3 +95,5 @@ java.text.ParseException: Unparseable date: ""
 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109) [?:?]
 	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101) [?:?]
 	at java.awt.EventDispatchThread.run(EventDispatchThread.java:90) [?:?]
+[INFO ] 2022-05-29 17:59:58.880 [AWT-EventQueue-0] MenuWindow - Check authentication
+[INFO ] 2022-05-29 17:59:59.993 [AWT-EventQueue-0] MenuWindow - Check authentication
