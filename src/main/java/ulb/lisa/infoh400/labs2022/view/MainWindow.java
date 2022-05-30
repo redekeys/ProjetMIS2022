@@ -12,6 +12,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import ulb.lisa.infoh400.labs2022.auth.Authentication;
 import ulb.lisa.infoh400.labs2022.controller.DoctorJpaController;
 import ulb.lisa.infoh400.labs2022.controller.PatientJpaController;
 import ulb.lisa.infoh400.labs2022.controller.exceptions.IllegalOrphanException;
@@ -185,23 +186,31 @@ public class MainWindow extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void logInPatientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logInPatientButtonActionPerformed
-        LoginWindow loginPopup = new LoginWindow();
-        loginPopup.setVisible(true);
+        LOGGER.info("Check authentication");
+        if( Authentication.hasUser() ){
+            MainWindow.login("patient");
+        }
+        else{
+           MainWindow.firstUser("patient"); 
+        }
     }//GEN-LAST:event_logInPatientButtonActionPerformed
 
     private void registerPatientButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerPatientButtonActionPerformed
-        AddPatientWindow patientAddPopup = new AddPatientWindow();
-        patientAddPopup.setVisible(true);
+        MainWindow.firstUser("patient");
     }//GEN-LAST:event_registerPatientButtonActionPerformed
 
     private void registerDoctorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_registerDoctorButtonActionPerformed
-        AddDoctorWindow doctorAddPopup = new AddDoctorWindow();
-        doctorAddPopup.setVisible(true);
+        MainWindow.firstUser("doctor");
     }//GEN-LAST:event_registerDoctorButtonActionPerformed
 
     private void logInDoctorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_logInDoctorButtonActionPerformed
-        LoginWindow loginPopup = new LoginWindow();
-        loginPopup.setVisible(true);
+        LOGGER.info("Check authentication");
+        if( Authentication.hasUser() ){
+            MainWindow.login("doctor");
+        }
+        else{
+           MainWindow.firstUser("patient"); 
+        }
     }//GEN-LAST:event_logInDoctorButtonActionPerformed
 
     private void emergencyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emergencyButtonActionPerformed
@@ -209,7 +218,61 @@ public class MainWindow extends javax.swing.JFrame {
         emergencyPopup.setVisible(true);
     }//GEN-LAST:event_emergencyButtonActionPerformed
 
- 
+     public static void display(String person){
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                if (person == "doctor"){
+                    new DoctorWindow().setVisible(true);
+                }
+                else{
+                    new PatientWindow().setVisible(true);
+                }
+                
+            }
+        });
+    }
+    public static void login(String person){
+        // Show login window
+        LoginWindow loginWindow = new LoginWindow();
+        loginWindow.setVisible(true);
+
+        loginWindow.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent evt){
+                if( Authentication.getUser() != null )
+                    MainWindow.display(person);
+            }
+        });
+    }
+    public static void firstUser(String person){
+        // Create user window
+        CreateUserWindow userWindow = new CreateUserWindow();
+        userWindow.setVisible(true);
+        
+        userWindow.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosed(WindowEvent evt){
+                if (person == "doctor"){
+                    AddDoctorWindow doctorWindow = new AddDoctorWindow();
+                    doctorWindow.setVisible(true);
+                }
+                else if (person == "patient"){
+                    AddPatientWindow patientWindow = new AddPatientWindow();
+                    patientWindow.setVisible(true);
+                }
+                userWindow.addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosed(WindowEvent evt){
+                
+                MainWindow.login(person);
+            }
+        });
+            }
+        });
+        
+    }
+    
            
     /**
      * @param args the command line arguments

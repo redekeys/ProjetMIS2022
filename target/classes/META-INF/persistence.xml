@@ -10,7 +10,7 @@
     <class>ulb.lisa.infoh400.labs2022.model.Image</class>
     <class>ulb.lisa.infoh400.labs2022.model.User</class>
     <properties>
-      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mis2022?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=Europe/Brussels"/>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/mis1560?zeroDateTimeBehavior=convertToNull&amp;serverTimezone=Europe/Brussels"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <!--<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>-->
       <property name="javax.persistence.jdbc.password" value=""/>

@@ -47,7 +47,7 @@ public class DoctorWindow extends javax.swing.JFrame {
         refreshButton = new javax.swing.JButton();
         addButton = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         Hi_label.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         Hi_label.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
