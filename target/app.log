@@ -51,3 +51,21 @@
 [INFO ] 2022-05-30 09:48:09.157 [main] MainWindow - Displaying main window
 [INFO ] 2022-05-30 09:48:09.514 [AWT-EventQueue-0] MainWindow - Displaying main window
 [INFO ] 2022-05-30 09:48:11.166 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 09:57:42.477 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:57:42.825 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:58:46.952 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:58:47.321 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:58:48.472 [AWT-EventQueue-0] MainWindow - Check authentication
+[DEBUG] 2022-05-30 09:59:25.853 [AWT-EventQueue-0] AddPatientWindow - Created new person (id = 15)
+[DEBUG] 2022-05-30 09:59:25.859 [AWT-EventQueue-0] AddPatientWindow - Created new patient (id = 11)
+[DEBUG] 2022-05-30 09:59:25.861 [AWT-EventQueue-0] AddPatientWindow - Edited patient (id = 11)
+[INFO ] 2022-05-30 09:59:27.384 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 10:01:32.796 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 10:01:33.140 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 10:01:56.265 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 10:01:56.619 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 10:02:00.011 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 10:02:44.730 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 10:02:45.091 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 10:02:46.289 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 10:02:55.398 [AWT-EventQueue-0] MainWindow - Check authentication
