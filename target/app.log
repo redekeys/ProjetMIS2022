@@ -43,3 +43,11 @@
 [DEBUG] 2022-05-30 09:41:50.689 [AWT-EventQueue-0] AddDoctorWindow - Created new person (id = 11)
 [DEBUG] 2022-05-30 09:41:50.695 [AWT-EventQueue-0] AddDoctorWindow - Created new doctor (id = 3)
 [DEBUG] 2022-05-30 09:41:50.697 [AWT-EventQueue-0] AddDoctorWindow - Edited doctor (id = 3)
+[INFO ] 2022-05-30 09:47:02.019 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:47:02.374 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:47:08.828 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:47:09.186 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:47:10.736 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 09:48:09.157 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:48:09.514 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 09:48:11.166 [AWT-EventQueue-0] MainWindow - Check authentication
