@@ -5,6 +5,7 @@
 package ulb.lisa.infoh400.labs2022.view;
 
 import java.awt.event.MouseEvent;
+import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
@@ -21,9 +22,12 @@ public class PatientWindow extends javax.swing.JFrame {
 
     private final EntityManagerFactory emfac = Persistence.createEntityManagerFactory("infoh400_PU");
     private final DoctorJpaController doctorCtrl = new DoctorJpaController(emfac);
+    private int docId = 0;
+    private List<Doctor> mydocs;
     
     public PatientWindow() {
         initComponents();
+        mydocs = new ArrayList <Doctor>();
     }
 
     /**
@@ -46,7 +50,6 @@ public class PatientWindow extends javax.swing.JFrame {
         yourDoctorLabel = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         yourDoctorList = new javax.swing.JList<>();
-        addDoctorButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -93,13 +96,6 @@ public class PatientWindow extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(yourDoctorList);
 
-        addDoctorButton.setText("Add doctor");
-        addDoctorButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                addDoctorButtonActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -107,15 +103,12 @@ public class PatientWindow extends javax.swing.JFrame {
             .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, 575, Short.MAX_VALUE)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(yourDoctorLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(searchDoctorsList, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 245, Short.MAX_VALUE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(refreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(addDoctorButton)))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
+                    .addComponent(refreshButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2)
@@ -135,9 +128,7 @@ public class PatientWindow extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(refreshButton)
-                            .addComponent(addDoctorButton))
+                        .addComponent(refreshButton)
                         .addGap(18, 18, 18)
                         .addComponent(yourDoctorLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -153,10 +144,6 @@ public class PatientWindow extends javax.swing.JFrame {
         refreshDoctorList();
     }//GEN-LAST:event_refreshButtonActionPerformed
 
-    private void addDoctorButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addDoctorButtonActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_addDoctorButtonActionPerformed
-
     private void yourDoctorListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yourDoctorListMouseClicked
         String out = "";
         
@@ -170,11 +157,14 @@ public class PatientWindow extends javax.swing.JFrame {
             String inami = selected.getInami();
             int nbrAppointment = selected.getAppointmentList().size();
             
+            
             out = "Speciality : " + spe + "\n"
                 + "Inami : " + inami + "\n"
                 + "Pending appointments : " + nbrAppointment + "\n";
             
          }
+        
+        
         doctorInfoTextArea.setText(out);
     }//GEN-LAST:event_yourDoctorListMouseClicked
 
@@ -190,11 +180,13 @@ public class PatientWindow extends javax.swing.JFrame {
             
             String spe = selected.getSpecialty();
             int nbrAppointment = selected.getAppointmentList().size();
+            docId =  selected.getIddoctor();
             
             out = "Speciality : " + spe + "\n"
                 + "Pending appointments : " + nbrAppointment + "\n";
             
          }
+        refreshYourDoctorList(docId);
         doctorInfoTextArea.setText(out);
     }//GEN-LAST:event_searchDoctorListMouseClicked
 
@@ -203,7 +195,6 @@ public class PatientWindow extends javax.swing.JFrame {
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton addDoctorButton;
     private javax.swing.JLabel doctorInfoLabel;
     private javax.swing.JTextArea doctorInfoTextArea;
     private javax.swing.JLabel jLabel1;
@@ -223,6 +214,15 @@ public class PatientWindow extends javax.swing.JFrame {
  
         searchDoctorList.setModel(model);
         //tempo pour test
+        //yourDoctorList.setModel(model);
+    }
+
+    private void refreshYourDoctorList(int docId) {
+        Doctor doc = doctorCtrl.findDoctor(docId);
+        if (!mydocs.contains(doc)){
+            mydocs.add(doc);
+        }
+        EntityListModel<Doctor> model = new EntityListModel(mydocs);
         yourDoctorList.setModel(model);
     }
 }
