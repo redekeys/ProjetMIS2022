@@ -1,143 +1,119 @@
-[INFO ] 2022-05-30 08:53:10.137 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 08:53:10.750 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 08:57:26.144 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 08:57:26.727 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 08:58:18.785 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 08:58:19.380 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:00:46.857 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:00:47.598 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:11:50.190 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:11:50.776 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:11:52.674 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:12:12.758 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:12:52.696 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:12:53.567 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:13:03.749 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:13:04.332 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:26:31.709 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:26:32.271 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:26:39.758 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:26:44.120 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:28:45.342 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:28:45.903 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:28:47.272 [AWT-EventQueue-0] MainWindow - Check authentication
-[DEBUG] 2022-05-30 09:29:11.722 [AWT-EventQueue-0] AddPatientWindow - Created new person (id = 9)
-[DEBUG] 2022-05-30 09:29:11.729 [AWT-EventQueue-0] AddPatientWindow - Created new patient (id = 7)
-[DEBUG] 2022-05-30 09:29:11.731 [AWT-EventQueue-0] AddPatientWindow - Edited patient (id = 7)
-[DEBUG] 2022-05-30 09:30:18.656 [AWT-EventQueue-0] AddPatientWindow - Created new person (id = 10)
-[DEBUG] 2022-05-30 09:30:18.662 [AWT-EventQueue-0] AddPatientWindow - Created new patient (id = 8)
-[DEBUG] 2022-05-30 09:30:18.664 [AWT-EventQueue-0] AddPatientWindow - Edited patient (id = 8)
-[INFO ] 2022-05-30 09:35:00.845 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:35:01.195 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:35:04.272 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:35:47.624 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:37:00.608 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:37:00.949 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:37:55.037 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:38:21.002 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:39:10.439 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:39:10.794 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:40:53.025 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:40:53.385 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:40:54.589 [AWT-EventQueue-0] MainWindow - Check authentication
-[DEBUG] 2022-05-30 09:41:50.689 [AWT-EventQueue-0] AddDoctorWindow - Created new person (id = 11)
-[DEBUG] 2022-05-30 09:41:50.695 [AWT-EventQueue-0] AddDoctorWindow - Created new doctor (id = 3)
-[DEBUG] 2022-05-30 09:41:50.697 [AWT-EventQueue-0] AddDoctorWindow - Edited doctor (id = 3)
-[INFO ] 2022-05-30 09:57:49.801 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:57:50.157 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 09:57:51.305 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 09:58:27.062 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:07:22.901 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:07:23.291 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:07:24.487 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:08:33.141 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:08:33.499 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:08:34.665 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:09:32.298 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:09:32.683 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:09:33.986 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:12:49.116 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:12:49.481 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:12:50.566 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:13:39.119 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:13:39.493 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:13:40.728 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:14:23.257 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:14:23.646 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:14:27.600 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:14:48.237 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:14:48.591 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:14:49.627 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:15:47.937 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:15:48.298 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:15:49.361 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:16:28.807 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:16:29.181 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:16:30.105 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:17:11.544 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:17:11.915 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:17:12.800 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:26:35.965 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:26:36.326 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:26:37.292 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:29:54.718 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:29:55.087 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:29:55.974 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:30:43.167 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:30:43.547 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:30:44.416 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:31:18.217 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:31:18.608 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:31:19.526 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:32:10.528 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:32:10.915 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:32:19.844 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:32:20.198 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:32:21.073 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:35:44.250 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:35:44.625 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:35:46.304 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:36:35.339 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:36:35.707 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:36:36.661 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:44:10.634 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:44:10.999 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:44:11.927 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:48:41.586 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:48:41.946 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:48:42.941 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:49:02.319 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:49:02.686 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:49:04.020 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:49:22.365 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:50:31.984 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:50:32.340 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:50:33.399 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:50:35.702 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:50:55.061 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:50:55.445 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:50:56.945 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:51:03.830 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:53:08.079 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:53:08.444 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:53:09.364 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 11:53:45.564 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:53:45.929 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 11:53:46.738 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:07:02.528 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:07:02.902 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:07:03.810 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:07:13.315 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:15:34.221 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:15:34.604 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:15:35.913 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:16:41.076 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:16:41.453 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:16:51.512 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:17:19.839 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:19:31.699 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:19:32.094 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:19:35.285 [AWT-EventQueue-0] MainWindow - Check authentication
-[INFO ] 2022-05-30 12:26:29.517 [main] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:26:29.866 [AWT-EventQueue-0] MainWindow - Displaying main window
-[INFO ] 2022-05-30 12:26:32.743 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:33:10.978 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:33:11.405 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:33:14.421 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:34:14.201 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:34:14.571 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:34:24.998 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:34:25.366 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:34:26.593 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:35:12.070 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:35:12.428 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:35:13.798 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:36:17.378 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:36:17.730 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:36:18.836 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:37:09.933 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:37:10.296 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:37:11.338 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:37:42.238 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:37:42.603 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:37:43.611 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:39:59.351 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:39:59.708 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:40:00.901 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:40:29.552 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:40:29.918 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:40:31.129 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:45:10.083 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:45:10.482 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:46:33.951 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:52:51.865 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:52:52.226 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:52:54.488 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:54:07.721 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:54:08.088 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:54:09.203 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:55:03.020 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:55:03.376 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:55:04.364 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:56:11.688 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:56:12.036 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:56:13.345 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:56:34.905 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 15:57:23.425 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 15:57:23.778 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:02:38.284 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:02:59.060 [AWT-EventQueue-0] MainWindow - Check authentication
+[DEBUG] 2022-05-30 16:04:12.091 [AWT-EventQueue-0] AddDoctorWindow - Created new person (id = 16)
+[DEBUG] 2022-05-30 16:04:12.097 [AWT-EventQueue-0] AddDoctorWindow - Created new doctor (id = 5)
+[DEBUG] 2022-05-30 16:04:12.099 [AWT-EventQueue-0] AddDoctorWindow - Edited doctor (id = 5)
+[INFO ] 2022-05-30 16:04:13.839 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:06:08.701 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:06:09.062 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:06:11.642 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:08:02.669 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:08:03.029 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:08:04.047 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:08:36.518 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:08:50.246 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:08:56.255 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:08:56.446 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:10:30.243 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:10:38.930 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:10:50.620 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:11:55.741 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:11:56.107 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:11:58.418 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:12:16.741 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:12:22.405 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:13:49.511 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:49.520 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:50.070 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:50.073 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:51.778 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:51.975 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:52.139 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:52.332 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:13:53.463 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:13:58.638 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:01.565 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:04.088 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:17.393 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:14:17.754 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:14:18.703 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:23.184 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:33.865 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:47.050 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:49.922 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:14:58.983 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:15:04.906 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:15:05.266 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:15:06.260 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:15:08.357 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:15:13.068 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:20:46.043 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:21:23.229 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:22:50.799 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:22:51.158 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:22:52.484 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:24:40.839 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:24:41.200 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:24:46.064 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:27:15.019 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:27:15.378 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:27:29.721 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:32:54.003 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:32:54.361 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:32:55.553 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 16:33:54.971 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:33:55.325 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:37:41.722 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:37:42.083 [AWT-EventQueue-0] MainWindow - Displaying main window
+[INFO ] 2022-05-30 16:37:52.621 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 17:00:55.635 [main] MainWindow - Displaying main window
+[INFO ] 2022-05-30 17:00:55.997 [AWT-EventQueue-0] MainWindow - Displaying main window
+[DEBUG] 2022-05-30 17:01:25.827 [AWT-EventQueue-0] AddPatientWindow - Created new person (id = 21)
+[DEBUG] 2022-05-30 17:01:25.833 [AWT-EventQueue-0] AddPatientWindow - Created new patient (id = 15)
+[DEBUG] 2022-05-30 17:01:25.838 [AWT-EventQueue-0] AddPatientWindow - Edited patient (id = 15)
+[INFO ] 2022-05-30 17:01:53.949 [AWT-EventQueue-0] MainWindow - Check authentication
+[INFO ] 2022-05-30 17:02:47.747 [AWT-EventQueue-0] MainWindow - Check authentication

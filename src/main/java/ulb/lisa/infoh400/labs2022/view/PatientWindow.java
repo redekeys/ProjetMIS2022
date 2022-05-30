@@ -50,6 +50,7 @@ public class PatientWindow extends javax.swing.JFrame {
         yourDoctorLabel = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         yourDoctorList = new javax.swing.JList<>();
+        addButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
@@ -96,6 +97,13 @@ public class PatientWindow extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(yourDoctorList);
 
+        addButton.setText("Add");
+        addButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                addButtonActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -107,8 +115,12 @@ public class PatientWindow extends javax.swing.JFrame {
                     .addComponent(yourDoctorLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jScrollPane3, javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(searchDoctorsList, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
-                    .addComponent(refreshButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 318, Short.MAX_VALUE)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(refreshButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(addButton)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane2)
@@ -128,7 +140,9 @@ public class PatientWindow extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(refreshButton)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(refreshButton)
+                            .addComponent(addButton))
                         .addGap(18, 18, 18)
                         .addComponent(yourDoctorLabel)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -146,55 +160,45 @@ public class PatientWindow extends javax.swing.JFrame {
 
     private void yourDoctorListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_yourDoctorListMouseClicked
         String out = "";
-        
         if (evt.getClickCount() == 2 && evt.getButton() == MouseEvent.BUTTON1 && yourDoctorList.getSelectedIndex() >= 0) {
-            
             EntityListModel model = (EntityListModel) yourDoctorList.getModel();
-                
             Doctor selected = (Doctor) model.getList().get(yourDoctorList.getSelectedIndex());
-            
             String spe = selected.getSpecialty();
             String inami = selected.getInami();
             int nbrAppointment = selected.getAppointmentList().size();
-            
-            
             out = "Speciality : " + spe + "\n"
                 + "Inami : " + inami + "\n"
                 + "Pending appointments : " + nbrAppointment + "\n";
-            
          }
-        
-        
         doctorInfoTextArea.setText(out);
     }//GEN-LAST:event_yourDoctorListMouseClicked
 
     private void searchDoctorListMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_searchDoctorListMouseClicked
         String out = "";
-        
         if (evt.getClickCount() == 2 && evt.getButton() == MouseEvent.BUTTON1 && searchDoctorList.getSelectedIndex() >= 0) {
-            
-            EntityListModel model = (EntityListModel) searchDoctorList.getModel();
-         
-                
+            EntityListModel model = (EntityListModel) searchDoctorList.getModel();          
             Doctor selected = (Doctor) model.getList().get(searchDoctorList.getSelectedIndex());
-            
             String spe = selected.getSpecialty();
             int nbrAppointment = selected.getAppointmentList().size();
             docId =  selected.getIddoctor();
-            
-            out = "Speciality : " + spe + "\n"
-                + "Pending appointments : " + nbrAppointment + "\n";
-            
+            out = "Speciality : " + spe + "\n";
+                //+ "Pending appointments : " + nbrAppointment + "\n";
          }
-        refreshYourDoctorList(docId);
         doctorInfoTextArea.setText(out);
     }//GEN-LAST:event_searchDoctorListMouseClicked
+
+    private void addButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_addButtonActionPerformed
+        EntityListModel model = (EntityListModel) searchDoctorList.getModel();
+        Doctor selected = (Doctor) model.getList().get(searchDoctorList.getSelectedIndex());
+        refreshYourDoctorList(docId);
+    }//GEN-LAST:event_addButtonActionPerformed
 
     /**
      * @param args the command line arguments
      */
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton addButton;
     private javax.swing.JLabel doctorInfoLabel;
     private javax.swing.JTextArea doctorInfoTextArea;
     private javax.swing.JLabel jLabel1;
@@ -211,10 +215,7 @@ public class PatientWindow extends javax.swing.JFrame {
     private void refreshDoctorList() {
         List doctors = doctorCtrl.findDoctorEntities();
         EntityListModel<Doctor> model = new EntityListModel(doctors);
- 
         searchDoctorList.setModel(model);
-        //tempo pour test
-        //yourDoctorList.setModel(model);
     }
 
     private void refreshYourDoctorList(int docId) {

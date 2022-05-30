@@ -112,7 +112,6 @@ public class LoginWindow extends javax.swing.JFrame {
         
         if( Authentication.login(username, password) )
             this.dispose();
-        
         invalidLoginText.setVisible(true);
     }//GEN-LAST:event_loginButtonActionPerformed
 

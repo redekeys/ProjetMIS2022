@@ -214,11 +214,11 @@ public class MainWindow extends javax.swing.JFrame {
     }//GEN-LAST:event_logInDoctorButtonActionPerformed
 
     private void emergencyButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emergencyButtonActionPerformed
-        EmergencyWindow emergencyPopup = new EmergencyWindow();
-        emergencyPopup.setVisible(true);
+        eIDconnectionWindow eidPopup = new eIDconnectionWindow();
+        eidPopup.setVisible(true);
     }//GEN-LAST:event_emergencyButtonActionPerformed
 
-     public static void display(String person){
+    public static void display(String person){
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
